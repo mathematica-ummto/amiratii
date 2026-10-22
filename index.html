@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عالم أميرة الوردي ​💗​</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700&family=Reem+Kufi:wght@500;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{rose:{100:'#ffe3ec',200:'#f4c2c2',300:'#ff9ebb',400:'#ff6291'},roseGold:'#b86b77',gold:'#d4af37'},fontFamily:{amiri:['Amiri','serif'],tajawal:['Tajawal','sans-serif']}}}}
+</script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{font-family:'Tajawal','Cairo',sans-serif;background:linear-gradient(135deg,#fff5f7 0%,#ffe4ec 40%,#f4c2c2 80%,#e8a598 100%);background-attachment:fixed;color:#4a2e35;overflow-x:hidden}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#fff5f7}::-webkit-scrollbar-thumb{background:#f4c2c2;border-radius:10px}
+.glass{background:rgba(255,255,255,.76);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.9);box-shadow:0 12px 35px rgba(232,165,152,.25)}
+.goldtext{background:linear-gradient(110deg,#8a4853 0%,#d4af37 35%,#f7e08a 50%,#d4af37 65%,#8a4853 100%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:-220% center}}
+#bgCanvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+#lotusGardenCanvas{cursor:pointer;touch-action:none}
+/* ---------- HERO ---------- */
+.halo{position:absolute;inset:-18px;border-radius:50%;border:1.5px dashed rgba(212,175,55,.7);animation:spin 30s linear infinite}
+.halo.b{inset:-34px;border:1px solid rgba(184,107,119,.35);animation-direction:reverse;animation-duration:44px}
+.halo.b{animation-duration:44s}
+.halo i{position:absolute;top:-6px;left:50%;font-style:normal;font-size:12px;color:#d4af37}
+@keyframes spin{to{transform:rotate(360deg)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.orn{display:flex;align-items:center;gap:.75rem;justify-content:center;color:#d4af37}
+.orn:before,.orn:after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,#d4af37)}
+.orn:after{transform:scaleX(-1)}
+.slogan{position:relative;max-width:34rem;margin:0 auto;padding:1.6rem 1.4rem;border-radius:1.5rem;background:rgba(255,255,255,.55);border:1px solid rgba(212,175,55,.45);box-shadow:0 10px 30px rgba(184,107,119,.15)}
+.slogan:before,.slogan:after{content:"❝";position:absolute;font-family:'Amiri',serif;font-size:3rem;line-height:1;color:rgba(212,175,55,.6);background:#fff5f7;border-radius:50%;width:2.6rem;height:2.6rem;display:flex;align-items:center;justify-content:center}
+.slogan:before{top:-1.3rem;right:1.2rem}
+.slogan:after{content:"❞";bottom:-1.3rem;left:1.2rem}
+/* ---------- صفحات القدر ---------- */
+.sky{position:relative;overflow:hidden;border-radius:2rem;color:#f5e9ee;border:1px solid rgba(212,175,55,.5);background:radial-gradient(120% 80% at 80% 0%,#3b2250 0%,transparent 60%),radial-gradient(100% 70% at 0% 100%,#4a2038 0%,transparent 60%),linear-gradient(160deg,#141c2b 0%,#231a33 55%,#301a2d 100%);box-shadow:0 25px 60px rgba(26,35,50,.45),inset 0 0 80px rgba(212,175,55,.06)}
+.stars{position:absolute;inset:0;pointer-events:none}
+.stars span{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;animation:tw 3s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.15;transform:scale(.6)}to{opacity:1;transform:scale(1.3)}}
+.moon{position:absolute;top:1.2rem;left:1.4rem;width:54px;height:54px;border-radius:50%;background:#fdf1c8;box-shadow:0 0 30px 8px rgba(253,241,200,.35);opacity:.9}
+.moon:after{content:"";position:absolute;top:-4px;right:-10px;width:50px;height:50px;border-radius:50%;background:#1c1d30}
+.book-spine{position:absolute;top:0;bottom:0;right:50%;width:1px;background:linear-gradient(transparent,rgba(212,175,55,.35),transparent);display:none}
+.page{position:relative;padding:1.4rem 1.5rem;border-radius:1.2rem;background:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-right:3px solid #ff9ebb;backdrop-filter:blur(6px);opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.page.gold{border-right-color:#d4af37}
+.page.show{opacity:1;transform:none}
+.page .no{position:absolute;top:-.7rem;left:1rem;font:700 .7rem 'Tajawal',sans-serif;color:#d4af37;background:#241a33;border:1px solid rgba(212,175,55,.5);padding:.1rem .7rem;border-radius:99px}
+.dropcap:first-letter{float:right;font-size:3.6rem;line-height:.85;padding-left:.5rem;padding-top:.3rem;color:#d4af37;font-weight:700}
+.finale{position:relative;text-align:center;padding:2rem 1.2rem;margin-top:1rem;border-radius:1.5rem;background:rgba(212,175,55,.07);border:1px solid rgba(212,175,55,.5)}
+.finale i{position:absolute;width:22px;height:22px;border:2px solid #d4af37}
+.finale .tr{top:-2px;right:-2px;border-left:0;border-bottom:0;border-top-right-radius:1.5rem}
+.finale .tl{top:-2px;left:-2px;border-right:0;border-bottom:0;border-top-left-radius:1.5rem}
+.finale .br{bottom:-2px;right:-2px;border-left:0;border-top:0;border-bottom-right-radius:1.5rem}
+.finale .bl{bottom:-2px;left:-2px;border-right:0;border-top:0;border-bottom-left-radius:1.5rem}
+/* ---------- misc ---------- */
+.jar-shake{animation:shake .6s cubic-bezier(.36,.07,.19,.97) both}
+@keyframes shake{10%,90%{transform:translate3d(-2px,0,0) rotate(-3deg)}30%,50%,70%{transform:translate3d(-5px,0,0) rotate(-5deg)}40%,60%{transform:translate3d(5px,0,0) rotate(5deg)}20%,80%{transform:translate3d(3px,0,0) rotate(3deg)}}
+.modal-enter{animation:popIn .4s cubic-bezier(.175,.885,.32,1.275) forwards}
+@keyframes popIn{0%{opacity:0;transform:scale(.85) translateY(20px)}100%{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.page{opacity:1;transform:none}}
+</style>
+</head>
+<body class="relative min-h-screen antialiased">
+<canvas id="bgCanvas"></canvas>
+
+<nav class="fixed top-0 inset-x-0 z-50 px-4 py-3" style="padding-top:calc(.75rem + env(safe-area-inset-top,0px))">
+  <div class="max-w-4xl mx-auto glass rounded-full px-6 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3"><span class="text-2xl floaty">​​​​💕​</span><span class="font-bold text-lg sm:text-xl font-amiri text-roseGold">عالم أميرة الوردي</span></div>
+    <a href="#lotusGardenSection" class="text-xs sm:text-sm font-medium text-roseGold bg-rose-100/80 hover:bg-rose-200 px-4 py-1.5 rounded-full transition border border-white">حديقة اللوتس 🪷</a>
+  </div>
+</nav>
+
+<main class="relative z-10 max-w-3xl mx-auto px-4 pt-28 pb-20 space-y-20">
+
+<!-- ================= HERO ================= -->
+<section class="text-center relative pt-2">
+  <div class="relative w-28 h-28 mx-auto mb-10">
+    <div class="halo"><i>​​​💟​</i></div><div class="halo b"><i>​​​💟​</i></div>
+    <div class="w-28 h-28 rounded-full bg-white/90 flex items-center justify-center shadow-xl border-2 border-gold/60 floaty relative">
+      <span class="text-6xl">​​💌​</span>
+      <span class="absolute -top-1 -right-1 text-gold text-lg">​💜​</span>
+      <span class="absolute -bottom-1 -left-1 text-sm">🌸</span>
+    </div>
+  </div>
+  <p class="font-amiri italic text-roseGold text-xl sm:text-2xl mb-1">يا</p>
+  <h1 class="font-amiri font-bold goldtext leading-[1.15] pb-2" style="font-size:clamp(4.5rem,18vw,9rem);filter:drop-shadow(0 6px 14px rgba(184,107,119,.28))">أميرة</h1>
+  <div class="orn my-4"><span>❀</span><span class="text-xs">​​​🤍​</span><span>❀</span></div>
+
+  <div class="slogan mt-8">
+    <p class="font-amiri text-xl sm:text-2xl leading-loose text-[#6b3a46]">لا أعرف إن كان الاسم قد اختير لكِ، أم أن الأميرة هي التي كانت تبحث عن اسمٍ يليق بها</p>
+  </div>
+
+  <div class="flex justify-center gap-4 pt-10 flex-wrap">
+    <a href="#introStory" class="px-7 py-3 bg-gradient-to-r from-roseGold to-rose-300 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition hover:-translate-y-0.5 text-sm">اقرئي القصة 📜</a>
+    <a href="#lotusGardenSection" class="px-7 py-3 bg-white/90 hover:bg-white text-roseGold border border-gold/50 rounded-full font-medium shadow-sm transition text-sm">حديقة اللوتس التفاعلية 🪷</a>
+  </div>
+</section>
+
+<!-- ================= صفحات القدر ================= -->
+<section id="introStory" class="scroll-mt-28">
+  <div class="sky p-6 sm:p-12">
+    <div class="stars" id="stars"></div>
+    <div class="moon"></div>
+
+    <header class="relative text-center pt-10 pb-8">
+      <span class="inline-block text-xs text-rose-200 bg-white/10 border border-white/15 px-4 py-1 rounded-full">حكاية حالمة 🕊️</span>
+      <h2 class="font-amiri font-bold goldtext mt-4" style="font-size:clamp(2.4rem,9vw,4rem)">صفحات القدر</h2>
+      <div class="orn mt-2"><span class="text-xs">​​​​💕​</span><span>📖</span><span class="text-xs">​​​​💕​</span></div>
+    </header>
+
+    <div class="relative space-y-7 font-amiri text-lg sm:text-2xl leading-loose sm:leading-[2.3] text-slate-100 text-justify">
+      <p class="page dropcap"><span class="no">١</span>لم أكن أدري حين فتحت صفحات القدر أنني سأقع في إحداها، وأن بعض الصفحات لا تُقرأ بل تُعاش، ولا تُطوى مهما حاولنا المضيّ إلى ما بعدها.</p>
+      <p class="page gold text-rose-100"><span class="no">٢</span>كانت وردية، تفوح منها رائحة الحلوى، وكان النسيم من حولي دافئًا على نحوٍ غريب، كأنها تحتضنني دون أن تمسّني، وكأن للورق قلبًا لا يُرى.</p>
+      <p class="page"><span class="no">٣</span>ثم كانت هناك، بعيدةً أمدّ يدي فلا تبلغها، قريبةً بما يكفي لأراها ولا بما يكفي لألمسها، ولعلّ المسافة ليست سوى إصبعٍ آخر لم أستطع مدّه بعد.</p>
+      <p class="page gold italic text-amber-200"><span class="no">٤</span>أليس عجيبًا أن تترك صفحةٌ واحدة كل هذا الأثر، أليس ظلمًا أن تتركي في الروح شيئًا منكِ ثم تمضي كأنكِ لم تفعلي شيئًا؟</p>
+      <p class="page"><span class="no">٥</span>حاولتُ الهرب، لكنّ الأبواب كانت ماكرة، كلما أوصدتُ أحدها وجدتُ خلف الآخر لونًا من عالمكِ، حتى خُيّل إليّ أن القدر لم يفتح لي تلك الصفحة لأقرأها، بل ليعلّمني أن بعض الحكايات لا تحتاج إلى نهاية كي تبقى عالقةً فينا.</p>
+      <p class="page gold text-rose-100"><span class="no">٦</span>والآن، كلما هممتُ بقلب الصفحة، توقفتُ عند حافتها قليلًا… لا لشيء، سوى أن بعض الألوان لا يُعوّضها البياض، وبعض الصفحات، مهما بدت عابرة، تجعلنا ننسى أننا كنّا نبحث عن طريقٍ للخروج.</p>
+
+      <div class="finale page">
+        <i class="tr"></i><i class="tl"></i><i class="br"></i><i class="bl"></i>
+        <div class="text-gold text-2xl mb-3">​​​​❣️​</div>
+        <p class="text-2xl sm:text-4xl font-bold font-amiri goldtext leading-relaxed">يا أميرة، ما أغرب أن يكون اسمكِ اسمًا، وأن تكوني في الحكاية أميرة، وأن تعجز اللغة، بكل ما فيها من أسماء، عن أن تجد لكِ اسمًا ثالثًا يليق بما تتركينه خلفكِ ♡</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOTUS GARDEN ================= -->
+<section id="lotusGardenSection" class="scroll-mt-28 space-y-6">
+  <div class="text-center space-y-3">
+    <span class="text-xs font-bold text-roseGold bg-white/70 px-4 py-1.5 rounded-full border border-rose-200 shadow-sm inline-block">عالم أزهار اللوتس الساحر 🌸</span>
+    <h2 class="text-3xl sm:text-5xl font-bold font-amiri goldtext">حديقة اللوتس التفاعلية ​​💌​</h2>
+    <p class="text-sm sm:text-base text-slate-600 max-w-md mx-auto">انقري داخل البركة لإنبات أزهار اللوتس واكتشاف العبارات العاطفية الـ 10 المختبئة فيها</p>
+  </div>
+  <div class="relative glass rounded-3xl p-3 border-2 border-white/90 shadow-2xl overflow-hidden">
+    <canvas id="lotusGardenCanvas" class="w-full h-80 sm:h-96 bg-gradient-to-b from-sky-100/60 via-pink-100/70 to-rose-200/90 shadow-inner rounded-2xl"></canvas>
+    <div id="canvasHint" class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none transition-opacity duration-500">
+      <span class="text-4xl animate-bounce mb-2">👇</span>
+      <span class="bg-white/95 text-roseGold px-6 py-2.5 rounded-full text-sm font-bold shadow-lg border border-rose-200">اضغطي هنا لإنبات لوتس واكتشاف العبارات ​​​​​​🐞​</span>
+    </div>
+    <div class="flex justify-between items-center px-4 py-2 mt-2 text-xs sm:text-sm font-bold text-roseGold border-t border-rose-200/60">
+      <span class="bg-white/80 px-3 py-1 rounded-full border border-rose-200 shadow-sm">زهور اللوتس المكتشفة: <span id="discoveredCount" class="text-pink-600">0</span> / 10 ​​​​​🌺​</span>
+      <button onclick="clearLotusPond()" class="hover:underline text-slate-500 hover:text-roseGold text-xs font-normal">إعادة تنظيف البركة 🧹</button>
+    </div>
+  </div>
+  <div id="quoteModal" class="hidden">
+    <div class="glass rounded-3xl p-6 sm:p-8 border-2 border-gold/50 shadow-xl text-center modal-enter">
+      <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-md border border-gold/40"><span class="text-2xl">​​​​​🌸​</span></div>
+      <span id="quoteBadge" class="inline-block text-xs font-bold text-roseGold bg-rose-100 px-3 py-1 rounded-full mb-3">العبارة رقم 1</span>
+      <p id="quoteModalText" class="text-xl sm:text-2xl font-bold font-amiri text-slate-800 leading-relaxed px-2 sm:px-6">...</p>
+      <div class="mt-5 pt-3 border-t border-rose-100 flex items-center justify-between text-xs text-roseGold">
+        <span id="modalProgressText"></span>
+        <button onclick="closeQuoteModal()" class="px-4 py-1.5 bg-roseGold text-white rounded-full font-bold hover:bg-rose-400 transition shadow-sm">متابعة الاستكشاف 🌸</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JAR ================= -->
+<section>
+  <div class="glass rounded-3xl p-8 sm:p-12 text-center border-2 border-white/90 shadow-xl">
+    <h2 class="text-2xl sm:text-4xl font-bold font-amiri text-roseGold mb-2">برطمان الرسائل الرقيقة 🍯🌸</h2>
+    <p class="text-slate-600 text-sm mb-6">انقري على البرطمان لاستخراج إحدى رسائل اللوتس الطيبة لأميرة</p>
+    <div id="jarElement" onclick="drawJarMessage()" class="inline-block cursor-pointer hover:scale-105 active:scale-95 transition duration-300 select-none group">
+      <div class="w-40 h-52 sm:w-48 sm:h-60 bg-white/40 border-4 border-white/90 rounded-3xl mx-auto shadow-xl relative flex flex-col items-center justify-center overflow-hidden backdrop-blur-md">
+        <div class="absolute top-0 w-32 h-6 bg-gold/80 rounded-b-lg border-2 border-white shadow-sm"></div>
+        <div class="absolute top-6 w-28 h-2 bg-rose-200"></div>
+        <div class="text-3xl space-y-2 opacity-90 group-hover:animate-pulse"><div>🌸 💌 💖</div><div>💞 🤍 ❄️</div><div>🌙 ⭐ ☀️</div></div>
+        <div class="absolute bottom-8 w-full h-5 bg-rose-300/80 border-y border-white"></div>
+      </div>
+      <span class="mt-4 inline-block px-6 py-2.5 bg-gradient-to-r from-roseGold to-rose-300 text-white rounded-full text-sm font-bold shadow-md">افتحي رسالة 💌</span>
+    </div>
+    <div id="noteDisplay" class="hidden mt-6 p-6 bg-white/95 rounded-2xl border border-gold/40 shadow-lg max-w-lg mx-auto">
+      <span class="text-3xl block mb-2">🪷</span>
+      <p id="noteText" class="text-lg sm:text-xl font-bold font-amiri text-slate-800 leading-relaxed">...</p>
+      <button onclick="drawJarMessage()" class="mt-4 text-xs text-roseGold hover:text-rose-400 underline font-bold">رسالة أخرى لأميرة؟ ✨</button>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center pt-8 border-t border-rose-200/60 text-slate-600 text-sm space-y-2">
+  <p class="font-amiri text-xl text-roseGold font-bold">صُنع بحب لأجمل وأرق أميرة 🥀</p>
+  <p class="text-xs text-slate-500">عالم الجمال والهدوء © 2026</p>
+</footer>
+</main>
+
+<script>
+/* ---- starry sky + page reveal ---- */
+(function(){
+  var s=document.getElementById('stars'),h='';
+  for(var i=0;i<60;i++){h+='<span style="top:'+(Math.random()*100)+'%;left:'+(Math.random()*100)+'%;animation-delay:'+(Math.random()*3).toFixed(2)+'s;animation-duration:'+(2+Math.random()*3).toFixed(1)+'s;transform-origin:center;width:'+(Math.random()>.8?4:2)+'px;height:'+(Math.random()>.8?4:2)+'px"></span>';}
+  s.innerHTML=h;
+  var pages=document.querySelectorAll('.page');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target);}});},{threshold:.15});
+    pages.forEach(function(p,i){p.style.transitionDelay=(i%2*0.1)+'s';io.observe(p);});
+  }else{pages.forEach(function(p){p.classList.add('show');});}
+})();
+
+/* ---- background petals ---- */
+const bgCanvas=document.getElementById('bgCanvas'),bgCtx=bgCanvas.getContext('2d');
+function resizeBg(){bgCanvas.width=innerWidth;bgCanvas.height=innerHeight}
+addEventListener('resize',resizeBg);resizeBg();
+class Fl{
+  constructor(){this.reset();this.y=Math.random()*bgCanvas.height}
+  reset(){this.x=Math.random()*bgCanvas.width;this.y=-20;this.size=Math.random()*8+4;this.sy=Math.random()+.4;this.sx=Math.random()*.8-.4;this.rot=Math.random()*360;this.rs=Math.random()-.5;this.op=Math.random()*.6+.25;this.star=Math.random()>.65;this.c=['#ffcadc','#ff9ebb','#e8a5b8','#d4af37'][Math.floor(Math.random()*4)]}
+  update(){this.y+=this.sy;this.x+=Math.sin(this.y*.01)+this.sx;this.rot+=this.rs;if(this.y>bgCanvas.height+20)this.reset()}
+  draw(){const c=bgCtx;c.save();c.translate(this.x,this.y);c.rotate(this.rot*Math.PI/180);c.globalAlpha=this.op;
+    if(this.star){c.fillStyle='#d4af37';c.beginPath();for(let i=0;i<5;i++){c.lineTo(Math.cos((18+i*72)*Math.PI/180)*this.size,-Math.sin((18+i*72)*Math.PI/180)*this.size);c.lineTo(Math.cos((54+i*72)*Math.PI/180)*this.size/2,-Math.sin((54+i*72)*Math.PI/180)*this.size/2)}c.closePath();c.fill()}
+    else{c.fillStyle=this.c;c.beginPath();c.moveTo(0,0);c.bezierCurveTo(-this.size,-this.size,-this.size,this.size,0,this.size*1.5);c.bezierCurveTo(this.size,this.size,this.size,-this.size,0,0);c.fill()}
+    c.restore()}
+}
+const bgEls=Array.from({length:45},()=>new Fl());
+(function loop(){bgCtx.clearRect(0,0,bgCanvas.width,bgCanvas.height);bgEls.forEach(e=>{e.update();e.draw()});requestAnimationFrame(loop)})();
+
+/* ---- lotus pond ---- */
+const lotusCanvas=document.getElementById('lotusGardenCanvas'),lCtx=lotusCanvas.getContext('2d');
+let lotuses=[],ripples=[],discoveredIndex=0;const discoveredSet=new Set();
+const quotes=[
+"هناك قلوبٌ تمرّ بك كنسمةٍ فوق بركة ماء، لا تُحدث ضجيجًا، لكنّ الماء لا يعود كما كان",
+"ليست كل زهرةٍ تخشى الماء، فبعضها خُلق ليزهر فوقه رغم كل ما يخفيه من عمق",
+"يُقال إن اللوتس تُزهر فوق الماء، ولعلّ بعض القلوب خُلقت لتمنح العالم جمالًا لا يشبه قسوته",
+"بعض الجمال لا يُربك العين، بل يُربك القلب الذي لم يكن ينوي الالتفات",
+"لعلّ أجمل ما في اللوتس أنها لا تعلم كم تبدو جميلة، ولعلّ بعض البشر كذلك",
+"هناك قلوبٌ تمرّ بك كنسمةٍ فوق بركة ماء، لا تُحدث ضجيجًا، لكنّ الماء لا يعود كما كان",
+"بعض الأشخاص لا يتركون وراءهم أثرًا يُرى، بل شيئًا يشبه الدفء، لا تعرف متى بدأته، ولا كيف اعتدت عليه",
+"ما أرقّ زهرةً لا تؤذي الماء وهي تشقّ طريقها إليه، وما أندر قلبًا يظلّ لطيفًا رغم ما يعبره",
+"لا أدري أكانت اللوتس جميلةً إلى هذا الحد، أم أنني صرت أرى في كل شيء رقيقٍ شيئًا يُشبهك",
+"أظنّ أن اللوتس لا تعرف كم هي جميلة، تمامًا كما لا تعرف بعض الأرواح كم يصبح العالم ألطف حين تمرّ به"];
+function resizeLotus(){const r=lotusCanvas.getBoundingClientRect();lotusCanvas.width=r.width;lotusCanvas.height=r.height}
+addEventListener('resize',resizeLotus);resizeLotus();
+class Ripple{constructor(x,y){this.x=x;this.y=y;this.r=5;this.a=.85}
+  update(){this.r+=1.3;this.a-=.018}
+  draw(){if(this.a<=0)return;lCtx.save();lCtx.beginPath();lCtx.arc(this.x,this.y,this.r,0,Math.PI*2);lCtx.strokeStyle='rgba(255,255,255,'+this.a+')';lCtx.lineWidth=1.8;lCtx.stroke();lCtx.restore()}}
+class Lotus{constructor(x,y,n){this.x=x;this.y=y;this.n=n;this.max=Math.random()*8+20;this.cur=0;this.pad=this.max*1.35}
+  update(){if(this.cur<this.max)this.cur+=.8}
+  draw(){const c=lCtx;
+    c.save();c.beginPath();c.arc(this.x,this.y+4,this.pad,.25*Math.PI,1.75*Math.PI);c.lineTo(this.x,this.y+4);c.fillStyle='#86efac';c.globalAlpha=.5;c.fill();c.restore();
+    for(let i=0;i<8;i++){c.save();c.translate(this.x,this.y);c.rotate(i*Math.PI/4);c.beginPath();c.moveTo(0,0);c.quadraticCurveTo(this.cur*.8,-this.cur*.8,0,-this.cur*1.3);c.quadraticCurveTo(-this.cur*.8,-this.cur*.8,0,0);c.fillStyle=i%2?'#f4c2c2':'#ff9ebb';c.globalAlpha=.9;c.fill();c.restore()}
+    c.save();c.beginPath();c.arc(this.x,this.y,this.cur*.35,0,Math.PI*2);c.fillStyle='#fde047';c.globalAlpha=.95;c.fill();c.restore();
+    c.save();c.font='bold 11px Cairo,sans-serif';c.fillStyle='#b86b77';c.textAlign='center';c.textBaseline='middle';c.fillText('🪷 '+this.n,this.x,this.y-this.pad-10);c.restore()}}
+lotusCanvas.addEventListener('click',e=>{
+  const h=document.getElementById('canvasHint');if(h)h.classList.add('opacity-0');
+  const r=lotusCanvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+  const i=discoveredIndex%quotes.length;discoveredSet.add(i+1);discoveredIndex++;
+  lotuses.push(new Lotus(x,y,i+1));ripples.push(new Ripple(x,y));
+  document.getElementById('discoveredCount').textContent=Math.min(discoveredSet.size,10);
+  showQuote(i+1,quotes[i]);
+});
+function showQuote(n,t){
+  const m=document.getElementById('quoteModal');
+  document.getElementById('quoteBadge').textContent='العبارة رقم '+n+' من 10';
+  document.getElementById('quoteModalText').textContent='«'+t+'»';
+  document.getElementById('modalProgressText').textContent='زهور مكتشفة: '+discoveredSet.size+' / 10';
+  m.classList.remove('hidden');m.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function closeQuoteModal(){document.getElementById('quoteModal').classList.add('hidden')}
+function clearLotusPond(){lotuses=[];ripples=[];discoveredSet.clear();discoveredIndex=0;document.getElementById('discoveredCount').textContent='0';closeQuoteModal();const h=document.getElementById('canvasHint');if(h)h.classList.remove('opacity-0')}
+(function loop(){lCtx.clearRect(0,0,lotusCanvas.width,lotusCanvas.height);
+  ripples=ripples.filter(r=>r.a>0);ripples.forEach(r=>{r.update();r.draw()});
+  lotuses.forEach(l=>{l.update();l.draw()});requestAnimationFrame(loop)})();
+
+/* ---- jar ---- */
+const jarPhrases=quotes.filter((q,i)=>i!==5).map((q,i)=>(i+1)+'. '+q+' '+['🥀','🌸','🌷','🍒','🤍','🍓','💧','🌺','🍨'][i]);
+jarPhrases[4]=jarPhrases[4].replace('بعض البشر كذلك.','بعض البشر كذلك (تماماً مثلكِ يا أميرة).');
+function drawJarMessage(){
+  const jar=document.getElementById('jarElement'),nd=document.getElementById('noteDisplay');
+  jar.classList.add('jar-shake');
+  setTimeout(()=>{jar.classList.remove('jar-shake');document.getElementById('noteText').textContent=jarPhrases[Math.floor(Math.random()*jarPhrases.length)];nd.classList.remove('hidden');nd.scrollIntoView({behavior:'smooth',block:'nearest'})},500);
+}
+</script>
+</body>
+</html>
